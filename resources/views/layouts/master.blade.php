@@ -27,7 +27,7 @@
               </div>
                 <div class="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{!! URL::to('/profesor') !!}">Inicio</a></li>
+                        <li class="active"><a href="{!! URL::to('/') !!}">Inicio</a></li>
                         <li>
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                               Profesores <span class="caret"></span>

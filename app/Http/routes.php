@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('home_view');
 });
 
 Route::resource('profesor', 'ProfesorController');
