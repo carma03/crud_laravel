@@ -15,8 +15,8 @@
 @endif
 
 @section('content')
-	<style>
-		@import url(//fonts.googleapis.com/css?family=Lato:100);
+    <style>
+        @import url(//fonts.googleapis.com/css?family=Lato:100);
 
         .title_home_content {
             text-align: center;
@@ -27,11 +27,13 @@
             font-size: 96px;
             font-weight: 100;
             font-family: 'Lato';
-        }    
-	</style>
-	<div class="container_">
+        }
+
+    </style>
+
+    <div class="container_">
         <div class="title_home_content">
-            <div class="title_home">Esta es una demo</div>
+            <div class="title_home">Esta es una demo de un CRUD en Laravel</div>
         </div>
     </div>
 @endsection
