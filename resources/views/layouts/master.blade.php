@@ -3,9 +3,16 @@
     <head>
         <title>@yield('titulo')</title>
         <link media="all" type="text/css" rel="stylesheet" href="{{asset('css/datepicker.css')}}" />
-        {!!Html::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')!!}
-        {!!Html::style('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css')!!}
-        {!!Html::script('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')!!}
+        <link media="all" type="text/css" rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+        <!-- {!!Html::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')!!} -->
+
+        <link media="all" type="text/css" rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}" />
+        <!-- {!!Html::style('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css')!!}-->
+
+        <link media="all" type="text/css" rel="stylesheet" href="{{asset('css/main.css')}}" />
+
+        <script src="{{asset('js/jquery/2.1.4/jquery.min.js')}}"></script>
+        <!--{!!Html::script('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')!!}-->
         
         <!-- Material Design for Bootstrap -->
         <link href="{{asset('material_design/css/roboto.min.css')}}" rel="stylesheet">
@@ -71,21 +78,13 @@
                 </div><!-- fin col-md-12 -->
             </div><!-- fin row -->
         </div><!-- fin container -->
-        
-        {!!Html::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')!!}
-        
+
         <div class="footer">
             <!-- <h5>Este es el footer</h5> -->
         </div>
-    
-        <style>
-            body {
-                padding-bottom: 40px;
-                padding-top: 60px;
-            }
-            .sidebar-nav-fixed {
-                width:20%;
-            }
-        </style>
+
+        <script src="{{asset('js/bootstrap/3.3.5/bootstrap.min.js')}}"></script>
+        <!-- {!!Html::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')!!} -->
+
     </body>
 </html>

@@ -1,0 +1,33 @@
+/* @import url(//fonts.googleapis.com/css?family=Lato:100); */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'),
+        url('../fonts/lato.woff2') format('woff2');
+}
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+.sidebar-nav-fixed {
+    width:20%;
+}
+
+.title_home_content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title_home {
+    font-size: 96px;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+div.img{
+    background-image: url('../images/7.jpg');
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+}

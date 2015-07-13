@@ -32,6 +32,8 @@
 
             .title {
                 font-size: 96px;
+                color: red;
+                background: green;
             }
         </style>
     </head>
