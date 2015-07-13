@@ -24,10 +24,3 @@ body {
     font-weight: 100;
     font-family: 'Lato';
 }
-
-div.img{
-    background-image: url('../images/7.jpg');
-    height: 200px;
-    width: 400px;
-    margin: 0 auto;
-}
