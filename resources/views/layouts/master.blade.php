@@ -22,6 +22,10 @@
         <!-- ver: http://www.eyecon.ro/bootstrap-datepicker/ -->
         <script src="{{asset('js/bootstrap-datepicker.js')}}"></script>
         
+        <!-- Font Awesome -->
+        <link href="{{asset('fonts/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+
     </head>
     <body>
         <div class="navbar navbar-fixed-top navbar-default">
@@ -62,20 +66,18 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        @if(Session::has('message'))
-                            <div class="alert alert-info alert-dismissible" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                {{Session::get('message')}}
-                            </div>
-                        @endif
-                        @yield('content')
-                    </section>
-
-                </div><!-- fin col-md-12 -->
+                <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <br>
+                    @if(Session::has('message'))
+                        <div class="alert alert-info alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            {{Session::get('message')}}
+                        </div>
+                    @endif
+                    @yield('content')
+                </section><!-- fin col-md-12 -->
             </div><!-- fin row -->
         </div><!-- fin container -->
 

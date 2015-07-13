@@ -9,7 +9,6 @@
 @endsection
 
 @section('content')
-    <h3>Esta es la página para ver un curso.</h3>
     @if(count($errors) > 0)
         <div class="alert alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -23,7 +22,7 @@
         </div>
     @endif
         <?php //para que sea un solo form, si se quiere agregar un campo, solo se edita un solo form para crear y actualizar ?>
-        Curso: {{$curso->nombre}}<br>
+    <h3>{{$curso->nombre}}</h3>
         Profesor:
         <?php 
             $profesores = DB::table('profesors')->where('id', $curso->id_profesor)->get();

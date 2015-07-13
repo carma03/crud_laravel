@@ -57,13 +57,14 @@ class ProfesorController extends Controller
     // ProfesorCreateRequest en base a la validacion del archivo app/Http/Request/ProfesorCreateRequest
     public function store(ProfesorCreateRequest $request)//o (Request $request)
     {
+        /*
         Profesor::create([
             'nombre' => $request['nombre'],
             'apellido' => $request['apellido'],
             'codigo' => $request['codigo'],
             'email' => $request['email'],
         ]);
-        
+        */
         Session::flash('message', 'Profesor registrado exitósamente.');
         return Redirect::to('/profesor');
     }
@@ -111,9 +112,11 @@ class ProfesorController extends Controller
     // ProfesorCreateRequest en base a la validacion del archivo app/Http/Request/ProfesorCreateRequest
     public function update($id, ProfesorUpdateRequest $request)//o (Request $request)
     {
+        /*
         $profesor = Profesor::find($id);
         $profesor->fill($request->all());
         $profesor->save();
+        */
         Session::flash('message', 'Profesor editado exitósamente.');
         return Redirect::to('/profesor');
     }
